@@ -49,7 +49,7 @@
 import React from "react";
 import Table from "react-bootstrap/Table";
 
-function Tble1() {
+const Tble1=()=> {
   const allKeys = Object.keys(localStorage);
 
   const data = allKeys.map((key) => {

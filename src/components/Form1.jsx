@@ -5,9 +5,7 @@ import Form from "react-bootstrap/Form";
 // import InputGroup from 'react-bootstrap/InputGroup';
 import Row from "react-bootstrap/Row";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Table from "react-bootstrap/Table";
-
-function Form1() {
+const Form1=()=> {
 
   const [validated, setValidated] = useState(false);
   const [user, setData] = useState([]);
@@ -19,6 +17,7 @@ function Form1() {
 
   const handleSubmit = (event) => {
     const form = event.currentTarget;
+    console.log("This is form"+form);
 
     console.log(event);
     if (form.checkValidity() === false) {
@@ -28,14 +27,14 @@ function Form1() {
 
     setValidated(true);
 
-    const formData = {
+    const formData = {  
       fname: form.fname.value,
       lname: form.lname.value,
       city: form.city.value,
       State: form.State.value,
     };
 
-    console.log(formData);
+    
 
     saveDataLocalStorage(formData);
     // setData(user.push(formData));
@@ -46,8 +45,6 @@ function Form1() {
     //   console.log(newData); // Log the updated array
     //   return newData;
     // });
-
-    console.log(user);
   };
 
   return (

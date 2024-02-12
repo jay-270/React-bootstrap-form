@@ -1,8 +1,18 @@
 *{
-    margin: 5px;
-    padding: 0px;
+    margin: 10px;
+    padding: 10px;
+    // background-color: black;
+    
 }
 .wh{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    // background-color: rgb(68, 18, 112);
+    .fr{
+        width: 70% !important;
+        // color: beige;
+    }
+    // .table{ 
+    //     width: 50%;
+    // }
 }
